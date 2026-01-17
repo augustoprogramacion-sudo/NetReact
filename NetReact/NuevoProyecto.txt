@@ -1,0 +1,12 @@
+Agregar Swagger.
+Sobre el proyecto de la API, ir a paquetes, y instalar 
+Swashbuckle.AspNetCore
+
+En program.cs agregar:
+builder.Services.AddSwaggerGen();
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
